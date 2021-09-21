@@ -1,0 +1,14 @@
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+i {
+    font-style: normal;
+    font-weight: bold;
+}
+b{
+    font-weight: normal;
+}
+.first {
+    font-variant: small-caps;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --img-size: 500px;
+        }
+        .picture img{
+            width: calc(var(--img-size)/5);
+            filter: grayscale(100%) drop-shadow(1px 1px 1px rgb(255, 255, 255)) blur(2px);
+            transition: 1s linear;
+        }
+        .picture img:hover {
+            width: var(--img-size);
+            filter: grayscale(0%) drop-shadow(6px 6px 10px grey);
+            border: 5px solid black;
+        }
+        .picture{
+            text-align: center;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="picture">
+        <img src="01.jpg" alt="picture">
+        <img src="01.jpg" alt="picture">
+        <img src="01.jpg" alt="picture">
+        <img src="01.jpg" alt="picture">
+        <img src="01.jpg" alt="picture">
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+.txt {
+    background-color: rgb(250, 222, 162);
+    border: 1px solid black;
+    background-image: url(../images/lin.gif);
+    color: blue;
+    background-repeat: no-repeat;
+    margin: 10px;
+    font-size: 12px;
+    text-indent: 19px;
+}
+
+.txt2 {
+    background-color: rgb(243, 216, 65);
+    border: 6px ridge grey;
+    color: blue;
+    background-image: url(../images/lin.gif);
+    background-repeat: no-repeat;
+    margin: 10px;
+    font-size: 16px;
+    text-indent: 19px;
+    padding-right: 10px;
+}
+
+.list {
+    list-style-image: url(../images/lin.gif);
+}
+/* a:hover{
+    color: red;
+    text-transform: uppercase;
+    text-decoration: none;
+} */
+p:first-letter{
+    background-image: url(../images/lin.gif);
+    color:red;
+    font-size: 1.8em;
+    font-family: monospace;
+    opacity:0;
+}
+
+.move:hover{
+    background-image: url(../images/lin.gif);
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    transition: 3s;
+}
+
+.down:hover{
+    vertical-align: -20px;
+    background-image: url(../images/stud2.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 3s;
+}

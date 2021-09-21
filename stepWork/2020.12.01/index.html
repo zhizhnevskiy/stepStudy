@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --img-size: 500px;
+        }
+
+        .picture img {
+            width: calc(var(--img-size)/2);
+            filter: grayscale(100%) drop-shadow(1px 1px 1px rgb(255, 255, 255)) blur(2px);
+            transition: 0.6s linear;
+            margin-bottom: 100px;
+        }
+
+        .picture img:hover {
+            /* width: var(--img-size); */
+            filter: grayscale(0%) drop-shadow(6px 6px 10px grey);
+            border: 5px solid black;
+        }
+
+        .picture {
+            text-align: center;
+        }
+
+        .one img:hover {
+            transform: rotate3d(1, 0, 0, 360deg);
+        }
+
+        .two img:hover{
+            transform: rotate3d(0, 1, 0, 360deg);
+        }
+
+        .three img:hover{
+            transform: rotate3d(0, 0, 1, 360deg);
+        }
+        #both{
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="picture one">
+        <img src="01.jpg" alt="picture">
+        <img src="01.jpg" alt="picture">
+        <img src="01.jpg" alt="picture">
+        <img src="01.jpg" alt="picture">
+        <img src="01.jpg" alt="picture">
+    </div>
+    <div class="picture two">
+        <img src="01.jpg" alt="picture">
+        <img src="01.jpg" alt="picture">
+        <img src="01.jpg" alt="picture">
+        <img src="01.jpg" alt="picture">
+        <img src="01.jpg" alt="picture">
+    </div>
+    <div class="picture three">
+        <img src="01.jpg" alt="picture">
+        <img src="01.jpg" alt="picture">
+        <img src="01.jpg" alt="picture">
+        <img src="01.jpg" alt="picture">
+        <img src="01.jpg" alt="picture">
+    </div>
+
+    <img id="both" src="02.jpg">
+    <img id="both" src="03.jpg">
+
+</body>
+
+</html>

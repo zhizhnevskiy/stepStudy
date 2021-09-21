@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        a:link {
+            color: red;
+        }
+
+        /*непосещённая ссылка*/
+
+        a:visited {
+            color: blue;
+        }
+
+        a:hover {
+            color: yellow;
+        }
+
+        a:active {
+            color: lime;
+        }
+
+        /*p::first-line{
+            font-weight: bold;
+        }
+        p::first-letter{
+            font-size: 30px;
+        }*/
+        p::before {
+            content: "😀";
+            /*content: open-quote;
+            content: "Внимание!!!";
+            font-style: italic;*/
+        }
+
+        P::after {
+            content: "😤";
+            /*content: close-quote;
+            content: "Вот и всё!!!";
+            font-style: italic;*/
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.google.by/">Google</a>
+    <p> Первая строка текста<br>
+        Вторая строка текста
+    </p>
+</body>
+
+</html>
